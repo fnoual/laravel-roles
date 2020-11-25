@@ -1,0 +1,26 @@
+<?php
+
+use Fnoual\Roles\Models\Role;
+use Illuminate\Database\Seeder;
+
+class RolesTableSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        Role::create([
+            'id' => 1,
+            'name' => 'admin',
+            'description' => 'Administrateur système'
+        ]);
+        Role::create([
+            'id' => 2,
+            'name' => 'user',
+            'description' => 'Utilisateur'
+        ]);
+    }
+}

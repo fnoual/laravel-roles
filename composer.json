@@ -1,0 +1,25 @@
+{
+    "name": "fnoual/roles",
+    "description": "Laravel roles system",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fawzi Noual",
+            "email": "fouzi.noual@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Fnoual\\Roles\\" : "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fnoual\\Roles\\UseRoleServiceProvider"
+            ]
+        }
+    }
+}
